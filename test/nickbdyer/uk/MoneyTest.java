@@ -41,6 +41,7 @@ public class MoneyTest {
     //Dollar/Franc duplcation
     //Common times
     //Compare Francs with Dollars
+    //Currency?
 
     //DONE
 

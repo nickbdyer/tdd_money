@@ -12,7 +12,7 @@ class Money {
 
     public boolean equals(Object object) {
         Money money = (Money) object;
-        return amount == money.amount && getClass().equals(money.getClass());
+        return amount == money.amount && currency().equals(money.currency());
     }
 
     static Money dollar(int amount) {

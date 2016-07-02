@@ -76,12 +76,15 @@ public class MoneyTest {
         assertEquals(Money.dollar(1), result);
     }
 
+    @Test
+    public void testIdentityRate() {
+        assertEquals(1, new Bank().rate("USD", "USD"));
+    }
+
     //TO DO
 
     //$5 + 10 CHF = $10 if rate is 2:1
-    //$5 + $5 = $10
     //Return Money from $5 + $5
-    //Reduce Money with conversion
     //Money rounding
     //hashCode()
     //Equal null
@@ -101,5 +104,8 @@ public class MoneyTest {
     //Dollar/Franc duplication
     //Delete testFrancMultiplication
     //Bank.reduce(Money)
+    //$5 + $5 = $10
+    //Reduce Money with conversion
+    //Reudce(Bank, String)
 
 }

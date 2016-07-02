@@ -43,10 +43,9 @@ public class MoneyTest {
     //hashCode()
     //Equal null
     //Equal object
-    //Dollar/Franc duplcation
+    //Dollar/Franc duplication
     //Common times
-    //Compare Francs with Dollars
-    //Currency?
+    //Delete testFrancMultiplication
 
     //DONE
 
@@ -56,5 +55,7 @@ public class MoneyTest {
     //make "amount" private
     //5CHF * 2 = 10CHF
     //Common equals
+    //Compare Francs with Dollars
+    //Currency?
 
 }

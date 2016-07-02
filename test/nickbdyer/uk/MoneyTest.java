@@ -31,6 +31,11 @@ public class MoneyTest {
         assertEquals(Money.franc(15), five.times(3));
     }
 
+    @Test
+    public void testCurrency() {
+        assertEquals("USD", Money.dollar(1).currency());
+        assertEquals("CHF", Money.franc(1).currency());
+    }
     //TO DO
 
     //$5 + 10 CHF = $10 if rate is 2:1

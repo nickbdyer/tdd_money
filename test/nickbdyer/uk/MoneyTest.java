@@ -73,7 +73,6 @@ public class MoneyTest {
     //$5 + 10 CHF = $10 if rate is 2:1
     //$5 + $5 = $10
     //Return Money from $5 + $5
-    //Bank.reduce(Money)
     //Money rounding
     //hashCode()
     //Equal null
@@ -92,5 +91,6 @@ public class MoneyTest {
     //Common times
     //Dollar/Franc duplication
     //Delete testFrancMultiplication
+    //Bank.reduce(Money)
 
 }

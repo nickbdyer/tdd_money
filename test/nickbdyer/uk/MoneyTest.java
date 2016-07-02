@@ -28,11 +28,14 @@ public class MoneyTest {
     //$5 + 10 CHF = $10 if rate is 2:1
     //make "amount" private
     //Money rounding
-    //equals
+    //hashCode()
+    //Equal null
+    //Equal object
 
     //DONE
 
     //$5 * 2 = $10
     //Dollar side effects?
+    //equals
 
 }

@@ -19,8 +19,6 @@ public class MoneyTest {
     public void testEquality() {
         assertTrue(Money.dollar(5).equals(Money.dollar(5)));
         assertFalse(Money.dollar(5).equals(Money.dollar(6)));
-        assertTrue(Money.franc(5).equals(Money.franc(5)));
-        assertFalse(Money.franc(5).equals(Money.franc(6)));
         assertFalse(Money.franc(5).equals(Money.dollar(5)));
     }
 
@@ -37,12 +35,6 @@ public class MoneyTest {
         assertEquals("CHF", Money.franc(1).currency());
     }
 
-
-    @Test
-    public void testDifferentClassEquality() {
-        assertTrue(new Money(10, "CHF").equals(new Franc(10, "CHF")));
-    }
-
     //TO DO
 
     //$5 + 10 CHF = $10 if rate is 2:1
@@ -50,9 +42,6 @@ public class MoneyTest {
     //hashCode()
     //Equal null
     //Equal object
-    //Dollar/Franc duplication
-    //Common times
-    //Delete testFrancMultiplication
 
     //DONE
 
@@ -64,5 +53,8 @@ public class MoneyTest {
     //Common equals
     //Compare Francs with Dollars
     //Currency?
+    //Common times
+    //Dollar/Franc duplication
+    //Delete testFrancMultiplication
 
 }

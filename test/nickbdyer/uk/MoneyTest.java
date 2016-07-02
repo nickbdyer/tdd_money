@@ -38,8 +38,8 @@ public class MoneyTest {
     //Equal null
     //Equal object
     //Dollar/Franc duplcation
-    //Common equals
     //Common times
+    //Compare Francs with Dollars
 
     //DONE
 
@@ -48,5 +48,6 @@ public class MoneyTest {
     //equals
     //make "amount" private
     //5CHF * 2 = 10CHF
+    //Common equals
 
 }

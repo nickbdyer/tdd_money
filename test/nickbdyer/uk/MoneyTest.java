@@ -83,8 +83,8 @@ public class MoneyTest {
 
     @Test
     public void testMixedAddition() {
-        Money fiveBucks = Money.dollar(5);
-        Money tenFrancs = Money.franc(10);
+        Expression fiveBucks = Money.dollar(5);
+        Expression tenFrancs = Money.franc(10);
         Bank bank = new Bank();
         bank.addRate("CHF", "USD", 2);
         Money result = bank.reduce(fiveBucks.plus(tenFrancs), "USD");
@@ -93,12 +93,13 @@ public class MoneyTest {
 
     //TO DO
 
-    //$5 + 10 CHF = $10 if rate is 2:1
     //Return Money from $5 + $5
     //Money rounding
     //hashCode()
     //Equal null
     //Equal object
+    //Sum.plus
+    //Expression.times
 
     //DONE
 
@@ -117,5 +118,6 @@ public class MoneyTest {
     //$5 + $5 = $10
     //Reduce Money with conversion
     //Reudce(Bank, String)
+    //$5 + 10 CHF = $10 if rate is 2:1
 
 }

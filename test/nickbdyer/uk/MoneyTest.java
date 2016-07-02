@@ -44,10 +44,20 @@ public class MoneyTest {
         assertEquals(Money.dollar(10), reduced);
     }
 
+    @Test
+    public void testPlusReturnsSum() {
+        Money five = Money.dollar(5);
+        Expression result = five.plus(five);
+        Sum sum = (Sum) result;
+        assertEquals(five, sum.augend);
+        assertEquals(five, sum.addend);
+    }
+
     //TO DO
 
     //$5 + 10 CHF = $10 if rate is 2:1
     //$5 + $5 = $10
+    //Return Money from $5 + $5
     //Money rounding
     //hashCode()
     //Equal null

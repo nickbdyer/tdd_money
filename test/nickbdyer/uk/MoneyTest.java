@@ -34,10 +34,17 @@ public class MoneyTest {
         assertEquals("USD", Money.dollar(1).currency());
         assertEquals("CHF", Money.franc(1).currency());
     }
+    
+    @Test
+    public void testSimpleAddition() {
+        Money sum = Money.dollar(5).plus(Money.dollar(5));
+        assertEquals(Money.dollar(10), sum);
+    }
 
     //TO DO
 
     //$5 + 10 CHF = $10 if rate is 2:1
+    //$5 + $5 = $10
     //Money rounding
     //hashCode()
     //Equal null
